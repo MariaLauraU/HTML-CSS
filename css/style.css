@@ -1,0 +1,75 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    background:linear-gradient(75deg, rgb(108, 131, 236), rgb(200, 203, 245))
+}
+.imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+.div_img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario{
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+    border: 1px solid rgb(121, 119, 119);
+    padding: 20px;
+}
+.coluna1,
+.coluna2{
+    flex-direction: column;
+}
+.coluna1{
+    flex: 1;
+}
+.coluna2{
+    flex: 1;
+}
+input{
+    border: 1px solid rgb(121, 119, 119);
+}
+.dn,
+.telefone,
+.hr,
+.email,
+.desc,
+.nivelDor,
+.anexos{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.container_nome{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+} 
+.texto{
+    margin: 5px;
+    width: 200px;
+    height: 20px;
+}
+.detalhes{
+    width: 425px;
+    height: 60px;
+    margin: 5px;
+}
+.container_botao{
+    align-self: flex-end;
+}
+.botao{
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    border-color: #3498db;
+    background-color: #3498db;
+    color: white;
+}
+.botao:hover{
+    background-color: #b8dcf5;
+}

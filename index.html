@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <div class="div_img">
+            <img class="imagem" src="image/icone.jpg">
+        </div>
+
+    <form class="formulario">
+
+        <div class="coluna1">
+
+            <div class="container_nome">
+                <label class="nome">Nome</label>
+                    <input type="text" class="texto" required minlength="2">
+                    <input type="text" class="texto" placeholder="sobrenome" required minlength="2">
+            </div>
+        
+            <div class="containerEmail">
+                <label class="email">Email</label>
+                <input type="email" class="texto">
+            </div>
+        
+
+            <label class="dn">Data de nascimento</label>
+            <input type="date" class="texto" required>
+            <br>
+        
+
+            <label class="telefone">Telefone</label>
+            <input type="tel" class="texto" placeholder="(99)99999-9999" required>
+        
+
+            <div class="especialista">Área de consulta</div>
+             <select>
+                    <option value="">Clinico geral</option>
+                    <option value="">Ortopodista</option>
+                    <option value="">Oftalmologista</option>
+                    <option value="">Cardiologista</option>
+                    <option value="">Neurologista</option>
+             </select>
+        
+
+            <div class="hr">Horário</div>
+                <input type="radio" name="opcao" value="manha" class="textoHr">Manhã<br/>
+                <input type="radio" name="opcao" value="tarde" class="textoHr">Tarde<br/>
+        </div>
+
+        <div class="coluna2">
+            <div>
+                <label class="sintomas">Sintomas</label>
+                <br>
+                <input type="checkbox" value="dorDeCabeça">
+                <label for="dorDeCabeça">Dor de cabeça</label>
+                <br>
+                <input type="checkbox" value="nauseas">
+                <label for="nauseas">Nauseas</label>
+                <br>
+                <input type="checkbox" value="dorNoCorpo">
+                <label for="dorNoCorpo">Dor no corpo</label>
+            </div>
+            
+            <label class="desc">Descrição detalhada dos sintomas</label>
+            <input type="search" class="detalhes" required minlength="10">
+            <br>
+
+            <label class="nivelDor">De 0 a 10 - Qual nível de dor ?</label>
+            <input type="number" class="texto" min="1" max="10">
+            <br>
+
+            <label class="anexos">Anexo de arquivos</label>
+            <input type="file" class="texto">
+        </div>
+
+        <div class="container_botao">
+            <input type="submit" class="botao"/>
+        </div>
+    </form>
+</body>
+</html>
